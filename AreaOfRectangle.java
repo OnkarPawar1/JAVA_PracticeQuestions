@@ -1,18 +1,23 @@
 import java.util.Scanner;  // Import the Scanner class
 
-public class AreaOfRectangle
+public class Main
 {
 	public static void main(String[] args) {
-	System.out.println("Enter the Radius of Circle : ");
-
+	
 	
 	// Area Of Circle Java Program
-	    Scanner R = new Scanner(System.in);
+System.out.println("Enter the Length : ");
+	    
+	    Scanner Length = new Scanner(System.in);
+	    double B= Length.nextDouble(); 
 
-	double pie = 3.14 ;
-	double Radius= R.nextDouble();  
-	double  Area = 2*pie*Radius*Radius ;
+System.out.println("Enter the Width : ");
+
+	    Scanner Width = new Scanner(System.in);
+	    double H= Width.nextDouble();  
+
+double  Area = B*H ;
 	
-	System.out.println("area of Circle is " + Area);
+	System.out.println("area of Rectangle is " + Area);
 	}
 }
